@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Формы</title>
+  <style>
+    p {
+      display: inline;
+    }
+    label {
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    fieldset {
+      width: 1200px;
+    }
+    b {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <form action="#" method="POST" enctype="multipart/form-data" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+    <fieldset>
+      <legend>Личные данные</legend>
+      
+      <label>Не писать! <input type="text" value="Сказано же, не писать" disabled></label>
+      <br>
+      <label>Тут тоже не писать! <input type="text" value="Можно только читать" readonly></label>
+      <br>
+      <label>Ваше имя: <input type="text" name="Name" placeholder="Иван"></label>
+      <br>
+      <label>Ваша электронная почта:<b>* </b> <input type="email" name="E-mail" placeholder="ivan@ivan.com" required></label>
+      <br>
+      <label>Ваш пароль:<b>* </b> <input type="password" name="Password" required></label>
+      <br>
+      <label>Дата рождения: <input type="date" name="DateOfBirth"></label>
+      <br>
+      <label>Номер телефона: <input type="tel" name="PhoneNumber" placeholder="+380123456789"></label>
+      <br>
+      <p>Ваш пол:</p> 
+        <label><input type="radio" name="gender" value="male"> Мужской</label>
+        <label><input type="radio" name="gender" value="female"> Женский</label>
+        <label><input type="radio" name="gender" value="other"> Другое</label>
+      <br>
+      <label>Ссылка на страничку в Фейсбуке: <input type="url" name="link" placeholder="https://www.facebook.com"></label>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Дополнительная информация</legend>
+      
+      <label>Ваша фотография: <input type="file" name="Photo"></label>
+      <br>
+      <label>Ваш любимый цвет: <input type="color" name="color"></label>
+      <br>
+      <label>Сколько лет вы изучаете английский? <input type="number" name="YearsOfEnglish"></label>
+      <br>
+      <p>Какой дополнительный иностранный язык хотели бы изучать?</p>
+      <label><input type="checkbox" name="lang[]" value="deutch"> Немецкий</label>
+      <label><input type="checkbox" name="lang[]" value="spanish"> Испанский</label>
+      <label><input type="checkbox" name="lang[]" value="japanese"> Японский</label>
+      <label><input type="checkbox" name="lang[]" value="french"> Французский</label>
+      <label><input type="checkbox" name="lang[]" value="polish"> Польский</label>
+      <label><input type="checkbox" name="lang[]" value="other"> Другой</label>
+      <label><input type="checkbox" name="lang[]" value="none"> Никакой</label>
+      <br>
+      <label>В какое время вы обычно находитесь онлайн? <input type="time" name="time"></label>
+      <br>
+      <label>Оцените что-нибудь: <input type="range" name="Mark"></label>
+      <br>
+      <p>Любимое блюдо:</p>
+      <select name="favDish">
+        <optgroup label="Основное блюдо:">
+          <option value="CreamSoup">Сырный крем-суп</option>
+          <option value="MashedPotao">Картофельное пюре</option>
+          <option value="Buckwheat">Гречка</option>
+          <option value="Pizza">Пицца</option>
+          <option value="Olivier">Оливье</option>
+          <option value="Kebab">Шашлык</option>
+        </optgroup>
+        <optgroup label="Дессерт:">
+          <option value="Pancakes">Блины</option>
+          <option value="IceCream">Мороженое</option>
+          <option value="Croisant">Круассан</option>
+          <option value="Cake">Торт</option>
+        </optgroup>
+      </select>
+      <br><br>
+      <p>Любимые напитки:</p>
+      <select name="favDrinks[]" size="5" multiple>
+        <optgroup label="Алкогольные">
+          <option value="Beer">Пиво</option>
+          <option value="Vodka">Водка</option>
+          <option value="Shampane">Шампанское</option>
+          <option value="Whiskey">Виски</option>
+          <option value="Wine">Вино</option>
+        </optgroup>
+        <optgroup label="Безалкогольные">
+          <option value="Tea">Чай</option>
+          <option value="Coffee">Кофе</option>
+          <option value="Water">Вода</option>
+          <option value="CocaCola">Кока-кола</option>
+          <option value="Milkshake">Молочный коктейль</option>
+        </optgroup>
+      </select>
+      <br><br>
+      <p>Расскажите о себе:</p>
+      <textarea name="About" cols="50" rows="6" placeholder="Напишите немного интересной информации о себе"></textarea>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Кнопки</legend>
+      <button type="submit">Отправить</button>
+      <button type="reset">Сбросить</button>
+      <button type="button">Кнопка</button>
+      <button disabled>Кнопка не работает</button>
+    </fieldset>
+  </form>
+</body>
+</html>
