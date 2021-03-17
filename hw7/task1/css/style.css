@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 134px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+header p:first-child {
+  font-size: 12px;
+  color: #898f99;
+  font-weight: 700;
+  letter-spacing: 4.8px;
+  line-height: 30px;
+  margin-bottom: 26px;
+}
+
+header h1 {
+  font-size: 48px;
+  color: #0ec8cb;
+  letter-spacing: 4.5px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+header p:last-child {
+  margin: 0 auto;
+  font-family: 'PT Sans', sans-serif;
+  width: 500px;
+  color: #999999;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  margin-bottom: 66px;
+}
+
+main {
+  text-align: center;
+  font-size: 0;
+  margin-bottom: 140px;
+}
+
+.item {
+  display: inline-block;
+  width: 235px;
+  background-color: #f7f7f7;
+  padding: 60px 25px 90px;
+  border: 1px solid #ececec;
+}
+
+.item:hover {
+  background-color: #0ec8cb;
+}
+
+.item:hover .icon_anchor {
+  background-position: 8px 2px;
+}
+
+.item:hover .icon_brilliant {
+  background-position: -106px 2px;
+}
+
+.item:hover .icon_glasses {
+  background-position: -220px 2px;
+}
+
+.item:hover .icon_monitor {
+  background-position: -346px 2px;
+}
+
+.item:hover h2 {
+  color: #fff;
+}
+
+.item:hover p {
+  color: #fff;
+}
+
+.item .icon {
+  margin: 0 auto;
+  width: 80px;
+  height: 70px;
+  background-image: url(/img/sprite.png);
+  background-repeat: no-repeat;
+  margin-bottom: 32px;
+}
+
+.item .icon_anchor {
+  background-position: 8px -132px;
+}
+
+.item .icon_brilliant {
+  background-position:  -106px -132px;
+}
+
+.item .icon_glasses {
+  background-position: -220px -132px;
+}
+
+.item .icon_monitor {
+  background-position: -346px -132px;
+}
+
+.item .table {
+  display: table;
+  margin: 0 auto;
+}
+
+.item .table h2 {
+  vertical-align: middle;
+  display: table-cell;
+  height: 50px;
+  font-size: 21px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.item p {
+  margin-top: 10px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  color: #777;
+  font-size: 14px;
+  line-height: 22px;
+}

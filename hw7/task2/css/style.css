@@ -1,0 +1,156 @@
+/* @font-face {
+  font-family: 'Weather Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src:
+       url('../fonts/weathericons-regular-webfont.eot') format('eot'),
+       url('../fonts/weathericons-regular-webfont.ttf') format('ttf'),
+       url('../fonts/weathericons-regular-webfont.woff') format('woff'),
+       url('../fonts/weathericons-regular-webfont.woff2') format('woff2'),
+       url('../fonts/weathericons-regular-webfont.svg') format('svg');
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .1s ease-in;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: #3399cc;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  border: 23px solid #2b81ac;
+}
+
+.container {
+  width: 90%;
+  max-width: 984px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 26px 0;
+  color: #fff;
+  font-size: 30px;
+}
+
+header h1 i {
+  vertical-align: middle;
+}
+
+.weather_list {
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+  padding: 3px;
+  background: #fff;
+}
+
+.weather_list:hover > .item {
+  opacity: .6;
+}
+
+.weather_list .item {
+  display: inline-block;
+  height: 155px;
+  width: 25%;
+  padding: 27px 0 80px;
+  font-size: 20px;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.weather_list > .item:hover {
+  opacity: 1;
+}
+
+.weather_list .item:active {
+  background: #ffffff;
+  opacity: .6;
+}
+
+.weather_list .item h2 {
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.weather_list .item span {
+  opacity: .6;
+  font-size: 26px;
+}
+
+.weather_list .item span::after {
+  content: '°C';
+}
+
+.weather_list .item i {
+  font-size: 40px;
+  margin-left: 8px;
+  opacity: .7;
+  vertical-align: bottom;
+}
+
+.weather_list .item_lisbon {
+  background-color: #3399cc;
+  width: 50%;
+}
+
+.weather_list .item_paris {
+  background-color: #33cccc;
+}
+
+.weather_list .item_belgrade {
+  background-color: #996699;
+}
+
+.weather_list .item_moscow {
+  background-color: #c24747;
+}
+
+.weather_list .item_telaviv {
+  background-color: #e2674a;
+}
+
+.weather_list .item_cair {
+  background-color: #ffcc66;
+}
+
+.weather_list .item_ny {
+  background-color: #99cc99;
+}
+
+.weather_list .item_newdelhi {
+  background-color: #669999;
+}
+
+.weather_list .item_sf {
+  width: 50%;
+  background-color: #cc6699;
+}
+
+.weather_list .item_tokyo {
+  background-color: #339966;
+}
+
+.weather_list .item_sydney{
+  width: 100%;
+  background-color: #666699;
+}
+
+footer {
+  color: #fff;
+  font-size: 22px;
+  margin: 24px 0;
+}
