@@ -93,7 +93,7 @@ main {
   margin: 0 auto;
   width: 80px;
   height: 70px;
-  background-image: url(/img/sprite.png);
+  background-image: url(img/sprite.png);
   background-repeat: no-repeat;
   margin-bottom: 32px;
 }
